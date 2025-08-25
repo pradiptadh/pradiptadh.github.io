@@ -23,7 +23,8 @@ const submitBtn = document.getElementById('submit-btn');
 const EMAIL_CONFIG = {
     web3forms: {
         endpoint: 'https://api.web3forms.com/submit',
-        accessKey: '84d656eb-56fa-4558-bc05-420f1f93e554' // Replace with your actual access key
+        // accessKey: '84d656eb-56fa-4558-bc05-420f1f93e554' 
+        accessKey: 'asaldluah' // Replace with your actual access key
     }
 };
 
@@ -353,7 +354,8 @@ async function handleFormSubmit(e) {
         contactForm.reset();
     } catch (error) {
         console.error('Form submission error:', error);
-        showNotification('Failed to send message. Please try again or contact me directly at pradiptaharyadi@gmail.com', 'error');
+        // showNotification('Failed to send message. Please try again or contact me directly at pradiptaharyadi@gmail.com', 'error');
+        showNotification('Failed to send message. will be right back', 'error');
     } finally {
         setSubmitLoading(false);
     }
